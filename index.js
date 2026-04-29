@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json())
 
 
-app.use("//images", express.static(path.join(__dirname, "src//images")));
+app.use("/images", express.static(path.join(__dirname, "src/images")));
 
 
 const proyectos = [
