@@ -49,11 +49,12 @@ const habilidades = [
   { id: 6,  nombre: "Git",          icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",               nivel: "Intermedio" },
   { id: 7,  nombre: "C#",           icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",         nivel: "Intermedio" },
   { id: 8,  nombre: "PHP",          icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",               nivel: "Intermedio" },
-  { id: 9,  nombre: "Laravel",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",       nivel: "Básico"     },
+  { id: 9,  nombre: "Laravel",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",       nivel: "intermedio"     },
   { id: 10, nombre: "Java",         icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",             nivel: "Básico"     },
   { id: 11, nombre: "Express",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",       nivel: "Intermedio" },
   { id: 12, nombre: "HTML5", icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", nivel: "Intermedio" },
   { id: 13, nombre: "CSS3", icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", nivel: "Intermedio" },
+  {id:14, nombre:"Vite", icono:"https://vitejs.dev/logo-with-shadow.png", nivel:"Intermedio"},
 ]
 
 app.get('/api/proyectos', (req, res) => {
