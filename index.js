@@ -52,6 +52,8 @@ const habilidades = [
   { id: 9,  nombre: "Laravel",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",       nivel: "Básico"     },
   { id: 10, nombre: "Java",         icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",             nivel: "Básico"     },
   { id: 11, nombre: "Express",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",       nivel: "Intermedio" },
+  { id: 12, nombre: "HTML5", icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", nivel: "Intermedio" },
+  { id: 13, nombre: "CSS3", icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", nivel: "Intermedio" },
 ]
 
 app.get('/api/proyectos', (req, res) => {
