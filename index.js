@@ -1,21 +1,16 @@
 import express from "express";
 import cors from "cors";
-import path from "path";
-import { fileURLToPath } from "url";
+
 
 
 const app = express()
 const PORT = 3000
 
-// Obtener el directorio actual
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+
 
 app.use(cors())
 app.use(express.json())
 
-
-app.use("/images", express.static(path.join(__dirname, "src/images")));
 
 
 const proyectos = [
@@ -46,17 +41,17 @@ const proyectos = [
 ]
 
 const habilidades = [
-  { id: 1, nombre: "React", icono: "/images/react.png", nivel: "Intermedio" },
-  { id: 2, nombre: "JavaScript", icono: "/images/javascript.png", nivel: "Intermedio" },
-  { id: 3, nombre: "Node.js", icono: "/images/nodejs.png", nivel: "Intermedio" },
-  { id: 4, nombre: "Tailwind CSS", icono: "/images/tailwind.png", nivel: "Intermedio" },
-  { id: 5, nombre: "SQL", icono: "/images/sql.png", nivel: "Intermedio" },
-  { id: 6, nombre: "Git", icono: "/images/git.png", nivel: "Intermedio" },
-  { id: 7, nombre: "C#", icono: "/images/csharp.png", nivel: "Intermedio" },
-  { id: 8, nombre: "PHP", icono: "/images/php.png", nivel: "Intermedio" },
-  { id: 9, nombre: "Laravel", icono: "/images/laravel.png", nivel: "Básico" },
-  { id: 10, nombre: "Java", icono: "/images/java.png", nivel: "Básico" },
-  { id: 11, nombre: "Express", icono: "/images/express.png", nivel: "Intermedio" }
+  { id: 1,  nombre: "React",        icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",           nivel: "Intermedio" },
+  { id: 2,  nombre: "JavaScript",   icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", nivel: "Intermedio" },
+  { id: 3,  nombre: "Node.js",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",         nivel: "Intermedio" },
+  { id: 4,  nombre: "Tailwind CSS", icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",nivel: "Intermedio" },
+  { id: 5,  nombre: "SQL",          icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",           nivel: "Intermedio" },
+  { id: 6,  nombre: "Git",          icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",               nivel: "Intermedio" },
+  { id: 7,  nombre: "C#",           icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",         nivel: "Intermedio" },
+  { id: 8,  nombre: "PHP",          icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",               nivel: "Intermedio" },
+  { id: 9,  nombre: "Laravel",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",       nivel: "Básico"     },
+  { id: 10, nombre: "Java",         icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",             nivel: "Básico"     },
+  { id: 11, nombre: "Express",      icono: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",       nivel: "Intermedio" },
 ]
 
 app.get('/api/proyectos', (req, res) => {
