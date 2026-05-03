@@ -6,7 +6,7 @@ API REST desarrollada con **Node.js** y **Express** para servir la información 
 
 Sustituye la URL siguiente por la de tu proyecto en el dashboard de Vercel (`Settings → Domains`):
 
-**URL base:** `https://TU-PROYECTO.vercel.app`
+**URL base:** `https://api-portafolio-6h01n37ie-cesar-rodas-projects-67a8f91b.vercel.app/`
 
 > Actualiza ese enlace en este README cuando tengas el dominio definitivo.
 
